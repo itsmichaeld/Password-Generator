@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --very-dark-bg: #1c1c1c;
+  --dark-bg: #1f2937;
+  --green-accent: #4adf86;
+  --input-field-dark-bg: #273549;
+  --white-text: #d5d4d8;
+  --green-btn: #10b981;
+  --grey-accent: #2f3e53;
+  --password-text: #55f991;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--very-dark-bg);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 550px;
+  height: 550px;
+  background-color: var(--dark-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+/* Text and button styles */
+
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  letter-spacing: -0.025em;
+}
+
+p {
+  color: var(--white-text);
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 50px;
+}
+
+#generate-password-btn {
+  color: var(--white-text);
+  background-color: var(--green-btn);
+  font-size: 16px;
+  font-weight: 500;
+  width: 190px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+#h1-span {
+  color: var(--green-accent);
+}
+
+/* Password box styles */
+
+hr {
+  border: 1px solid var(--grey-accent);
+  width: 446px;
+  margin-bottom: 35px;
+}
+
+.password-box-container {
+  display: flex;
+}
+
+.password-box {
+  width: 210px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: var(--input-field-dark-bg);
+  color: var(--password-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+#password1 {
+  margin-right: 24px;
+}
